@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom Minimal Editorial Scrollbar in Forest Green & Beige */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #183B32;
+}
+::-webkit-scrollbar-thumb {
+  background: #264E43;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D8C7A5;
+}
+
+/* Hairline Editorial Borders in Warm Beige */
+.border-hairline {
+  border-width: 1px;
+  border-color: rgba(216, 199, 165, 0.25);
+}
+
+.border-hairline-strong {
+  border-width: 1px;
+  border-color: rgba(216, 199, 165, 0.45);
+}
+
+/* Subtle Editorial Rules */
+.editorial-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(216, 199, 165, 0.35) 20%, rgba(216, 199, 165, 0.35) 80%, transparent);
+}
+
+/* Fluid Typography Helpers */
+.clamp-title {
+  font-size: clamp(2.5rem, 5.5vw + 1rem, 5.75rem);
+  line-height: 1.06;
+}
+
+.clamp-subtitle {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.4rem);
+  line-height: 1.55;
+}
+
+.clamp-heading {
+  font-size: clamp(2rem, 3.8vw + 0.5rem, 3.75rem);
+  line-height: 1.12;
+}
+
+/* Mobile-Friendly Touch Target */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
